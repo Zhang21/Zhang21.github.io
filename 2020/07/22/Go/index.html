@@ -108,7 +108,7 @@
 <meta property="og:site_name" content="风继续吹">
 <meta property="og:description" content="参考:  github: https://github.com/golang/go Docs: https://golang.org/doc/ awesome-go: https://github.com/avelino/awesome-go   版本:  go v1.14">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-08-25T11:50:18.404Z">
+<meta property="og:updated_time" content="2020-09-15T11:49:50.799Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Go">
 <meta name="twitter:description" content="参考:  github: https://github.com/golang/go Docs: https://golang.org/doc/ awesome-go: https://github.com/avelino/awesome-go   版本:  go v1.14">
@@ -375,8 +375,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-08-25T19:50:18+08:00">
-                2020-08-25
+              <time title="更新于" itemprop="dateModified" datetime="2020-09-15T19:49:50+08:00">
+                2020-09-15
               </time>
             
           </span>
@@ -442,7 +442,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  23,382
+                  23,391
                 </span>
               
 
@@ -555,8 +555,8 @@
 <li>bool</li>
 <li>string</li>
 <li>int, int8, int16, int32, int64</li>
-<li>unit, uint8, uint16, uint32, uint64, uintptr</li>
-<li>byte(unit8的别名)</li>
+<li>uint, uint8, uint16, uint32, uint64, uintptr</li>
+<li>byte(uint8的别名)</li>
 <li>rune(int32的别名，表示一个unicode码点)</li>
 <li>float32, float64</li>
 <li>complex64, complex128</li>
@@ -994,7 +994,7 @@
 <p><br></p>
 <h4 id="多值返回-1"><a href="#多值返回-1" class="headerlink" title="多值返回"></a>多值返回</h4><p>multiple return values</p>
 <p>以下简单的函数可从字节数组中的特定位置获取其值，并返回该数值和下一个位置。</p>
-<p>func nextInt(b []byte, i int) (int, int) {<br>    for ; i &lt; len(b) &amp;&amp; !isDigit(b[i]); i++ {<br>    }<br>    x := 0<br>    for ; i &lt; len(b) &amp;&amp; isDigit(b[i]); i++ {<br>        x = x*10 + int(b[i]) - ‘0’<br>    }<br>    return x, i<br>}</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">nextInt</span><span class="params">(b []<span class="keyword">byte</span>, i <span class="keyword">int</span>)</span> <span class="params">(<span class="keyword">int</span>, <span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">    <span class="keyword">for</span> ; i &lt; <span class="built_in">len</span>(b) &amp;&amp; !isDigit(b[i]); i++ &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    x := <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> ; i &lt; <span class="built_in">len</span>(b) &amp;&amp; isDigit(b[i]); i++ &#123;</span><br><span class="line">        x = x*<span class="number">10</span> + <span class="keyword">int</span>(b[i]) - <span class="string">'0'</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> x, i</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>获取多值：</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="built_in">len</span>(b); &#123;</span><br><span class="line">    x, i = nextInt(b, i)</span><br><span class="line">    fmt.Println(x)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><br><br><br></p>
@@ -1341,8 +1341,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/03/16/JavaScript/" rel="next" title="JavaScript">
-                <i class="fa fa-chevron-left"></i> JavaScript
+              <a href="/2019/12/26/Ansible/" rel="next" title="Ansible">
+                <i class="fa fa-chevron-left"></i> Ansible
               </a>
             
           </div>
@@ -1350,6 +1350,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/09/21/Helm/" rel="prev" title="Helm">
+                Helm <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -1434,7 +1438,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">70</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1456,7 +1460,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">133</span>
+                <span class="site-state-item-count">112</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1547,7 +1551,7 @@
 <!--字数统计-->
   <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count"> 字数: 1.0m</span>
+  <span class="post-count"> 字数: 126.1k</span>
 </div>
 
 
